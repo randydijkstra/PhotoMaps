@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photomaps</title>
+    	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/jquery-1.9.1.js"></script>
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+	</head>
+	<body>
+
+		<div id="top-bar">
+			<h1>Photomaps</h1>
+			<button id="reset">Reset</button>
+			<h2></h2>
+		</div>
+
+		<div id="left-collumn">
+			<div id="map-canvas"></div>
+		</div>
+		
+		<div id="right-collumn">
+			<div id="tag-input">
+				<h3>Instragram recent tag search</h3>
+				<input id="tagfield" type="text" placeholder="Enter tag...">
+				<button id="search">Search!</button>	
+				<p>Enter a tag to search for recent images</p>
+				<p>Tag search performs best with one tag at a time!</p>				
+			</div>
+			<div id="images"></div>	
+		</div>		
+
+		<div id="loader">
+			<p>Loading...</p>
+			<img src="img/ajax-loader.gif" alt="ajaxloader" />
+		</div>
+
+		<footer>&copy;2013 - Randy Dijkstra // 0837606 // V1.0</footer>
+
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>
