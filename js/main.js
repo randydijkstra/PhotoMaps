@@ -66,7 +66,8 @@ function startTagSearch(){
 
 
         //get instagram JSON data, use given tags 
-        $.getJSON(instaAPIuri+"tags/"+tag+"/media/recent?client_id=" + clientId + "&callback=?", instagramCallback);
+        $.getJSON(instaAPIuri+"media/search?lat=51.91850&lng=4.47967&distance=5000&count=10&client_id=" + clientId + "&callback=?" , instagramCallback);
+        // $.getJSON(instaAPIuri+"tags/"+tag+"/media/recent?client_id=" + clientId + "&callback=?", instagramCallback);
 
     }else{
         console.log("Field is empty!");
@@ -159,7 +160,7 @@ function focusToExcistingMarker(event){
         latLngPosition = new google.maps.LatLng(latcontent, longcontent);
 
         //pass the long + lat values to focusToMarker function
-        focusToMarker(latLngPosition, 13);
+        focusToMarker(latLngPosition, 15);
     }   
 }
 
